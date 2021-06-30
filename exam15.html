@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("첫번째 수 입력"));
+        var b = parseInt(prompt("두번째 수 입력"));
+        var res;
+        var cal = prompt("연산을 입력하시오");
+        function addN(a,b){
+            if(cal == "+"){
+                res = a + b;
+                
+            }
+        }
+            
+            if(cal == "더하기"){
+                res = a + b;
+                document.write(a + cal + b + "의 결과는 " +res+ "입니다");
+            }
+            else if(cal == "빼기"){
+                if(a < b){
+                    res = b - a;
+                    document.write(b + cal + a + "의 결과는 " +res+ "입니다");
+                }
+                else if(a>b){
+                    res = a - b;
+                    document.write(a + cal + b + "의 결과는 " +res+ "입니다");
+                    
+
+                }
+                
+            }
+            else if(cal == "곱하기"){
+                res = a * b;
+                document.write(a + cal + b + "의 결과는 " +res+ "입니다");
+            }
+            else if (cal == "나누기"){
+                res =  a / b;
+                document.write(a + cal + b + "의 결과는 " +res+ "입니다");
+            
+            }
+                
+            
+
+            
+        
+
+    </script>
+    
+</body>
+</html>

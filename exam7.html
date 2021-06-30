@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var menu = prompt("과자, 라면, 음료수 중 고르세요");
+        var cash = prompt("가지고 있는 돈을 입력하시오");
+        switch(menu){
+            case "과자":
+                if(cash < 3000 ){
+                    document.write("잔액이 부족합니다.");
+                }
+                else document.write("과자 3000원입니다.");
+                break;
+            case "라면":
+                if(cash < 4500){
+                    document.write("잔액이 부족합니다");
+                }
+                else document.write("라면 4500원입니다.");
+                break;
+            case "음료수":
+                if(cash < 5000){
+                    document.write("잔액이 부족합니다");
+                }
+                else document.write("음료수 5000원입니다.");
+                break;
+            default :
+                document.write(menu + "는 없습니다.");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
